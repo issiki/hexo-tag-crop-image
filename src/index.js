@@ -1,4 +1,4 @@
 /* global hexo */
 const cut = require("./crop");
 
-hexo.extend.helper.register("crop", cut);
+hexo.extend.tag.register("crop", cut);
