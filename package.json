@@ -1,0 +1,29 @@
+{
+  "name": "@sakunahime/hexo-tag-crop-image",
+  "version": "0.0.1",
+  "description": "help insert image cropping snippets.",
+  "main": "src/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha --parallel"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/issiki/hexo-tag-crop-image.git"
+  },
+  "keywords": [
+    "hexo"
+  ],
+  "author": "issiki",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/issiki/hexo-tag-crop-image/issues"
+  },
+  "homepage": "https://github.com/issiki/hexo-tag-crop-image#readme",
+  "devDependencies": {
+    "lodash": "^4.17.21",
+    "mocha": "^9.2.0"
+  }
+}
