@@ -1,6 +1,6 @@
 {
   "name": "@sakunahime/hexo-tag-crop-image",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "help insert image cropping snippets.",
   "main": "src/index.js",
   "directories": {
