@@ -68,5 +68,5 @@ module.exports = function (原字符串) {
         width = height;
     }
 
-    return `<span style="width:${width}${width === "0" ? "" : "px"};height:${height}${height === "0" ? "" : "px"};background:url('${image_url}') no-repeat scroll ${x_offset}${x_offset === "0" ? "" : "px"} ${y_offset}${y_offset === "0" ? "" : "px"} transparent;"><span style="width:100%;height:100%;"></span></span>`;
+    return `<span style="width:${width}${width === "0" ? "" : "px"};height:${height}${height === "0" ? "" : "px"};background:url(${image_url}) no-repeat scroll ${x_offset}${x_offset === "0" ? "" : "px"} ${y_offset}${y_offset === "0" ? "" : "px"} transparent;"><span style="width:100%;height:100%;"></span></span>`;
 }
