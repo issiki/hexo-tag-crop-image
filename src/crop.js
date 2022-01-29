@@ -1,8 +1,7 @@
-module.exports = function (原字符串) {
-    const array = `${原字符串}`.trim().split(" ");
-    const image_url = array[0];
+module.exports = function (params) {
+    const image_url = params[0];
     if (image_url === undefined) {
-        return 原字符串;
+        return params;
     }
 
     let width_be_set = false,
@@ -21,8 +20,8 @@ module.exports = function (原字符串) {
         y_offset = "0";
 
     // start from 1
-    for (let i = 1; i < array.length; i++) {
-        const str = array[i];
+    for (let i = 1; i < params.length; i++) {
+        const str = params[i];
         //检查宽度参数
         if (!width_be_set) {
             const ma = str.match(re_width);

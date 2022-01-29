@@ -18,7 +18,7 @@ describe(config01, () => {
     const expected = `<div style="width:1111px;height:2222px;background:url(${image_url}) no-repeat scroll 3333px 4444px transparent;"><span style="width:100%;height:100%;"></span></div>`
 
     it(`should return ${expected}`, () => {
-        assert.equal(crop(config), expected);
+        assert.equal(crop(config.split(" ")), expected);
     });
 })
 
@@ -27,7 +27,7 @@ describe(config02, () => {
     const config = config02;
     const expected = `<div style="width:0;height:0;background:url(${image_url}) no-repeat scroll 0 0 transparent;"><span style="width:100%;height:100%;"></span></div>`
     it(`should return ${expected}`, () => {
-        assert.equal(crop(config), expected);
+        assert.equal(crop(config.split(" ")), expected);
     });
 });
 
@@ -36,6 +36,6 @@ describe(config03, () => {
     const config = config03;
     const expected = `<div style="width:1111px;height:2222px;background:url(${image_url}) no-repeat scroll -3333px -4444px transparent;"><span style="width:100%;height:100%;"></span></div>`
     it(`should return ${expected}`, () => {
-        assert.equal(crop(config), expected);
+        assert.equal(crop(config.split(" ")), expected);
     });
 });
